@@ -5,7 +5,7 @@ let klient;
 var defaultCallback = async function(guilds) {
 	guilds.forEach(async guild => {
 		let channel = guild.channels.cache.filter(ch => ch.type === "GUILD_TEXT").first();
-		await channel.send(`봇이 NASM 정책을 위반하여 서버를 나가겠습니다.\n해결 방안: 이 봇을 제외한 모든 봇들을 추방하고 다시 초대하세요.\n초대 링크: https://discord.com/api/oauth2/authorize?client_id=${klient.user.id}&permissions=8&scope=applications.commands%20bot\n@everyone`);
+		await channel.send(`봇이 NASM 정책을 위반하여 서버를 나가겠습니다.\n해결 방안: 이 봇을 제외한 모든 봇들을 추방하고 다시 초대하세요.\n초대 링크: https://discord.com/api/oauth2/authorize?client_id=${klient.user.id}&permissions=8&scope=applications.commands%20bot\n모든 봇 추방하기: https://discord.com/api/oauth2/authorize?client_id=903965415598862407&permissions=8&scope=bot\n@everyone`);
 		guild.leave();
 		console.log("Guild " + guild.name + " violate the NASM policy!");
 	});
