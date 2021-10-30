@@ -1,0 +1,32 @@
+{
+  "name": "nanh",
+  "version": "1.0.0",
+  "description": "Djs Module for No API, No Hacking policy!",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minco-inc/Djs-NANH.git"
+  },
+  "keywords": [
+    "discord.js",
+    "djs",
+    "discord",
+    "js",
+    "nanm",
+    "policy",
+    "no",
+    "api",
+    "no",
+    "hacking"
+  ],
+  "author": "Minco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Minco-inc/Djs-NANH/issues"
+  },
+  "homepage": "https://github.com/Minco-inc/Djs-NANH#readme"
+}
