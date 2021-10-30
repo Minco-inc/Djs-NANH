@@ -1,6 +1,6 @@
 {
   "name": "nanh",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Djs Module for No API, No Hacking policy!",
   "main": "app.js",
   "devDependencies": {},

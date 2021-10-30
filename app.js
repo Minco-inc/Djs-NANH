@@ -11,14 +11,14 @@ var defaultCallback = async function(guilds) {
 	});
 }
 
-module.exports = function(client, callback = defaultCallback) {
+module.exports = function(client, except = [], callback = defaultCallback) {
 	guilds = [];
 	klient = client;
 	client.on("ready", () => {
 		client.guilds.cache.forEach(guild => {
 			let pushed = false;
 			guild.members.cache.forEach(member => {
-				if (member.user.id != client.user.id && member.user.bot) {
+				if (member.user.id != client.user.id && !except.includes(member.user.id) && member.user.bot) {
 					if (!pushed) {
 						guilds.push(guild);
 						pushed = true;
